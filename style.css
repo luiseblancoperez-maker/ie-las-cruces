@@ -1,0 +1,60 @@
+/* Paleta de colores Institucional */
+:root {
+    --verde-principal: #2e7d32; /* Verde bosque para la ruralidad */
+    --verde-acento: #4caf50;
+    --blanco-fondo: #f8f9fa;
+    --texto-oscuro: #2c3e50;
+}
+
+body {
+    background-color: var(--blanco-fondo);
+    color: var(--texto-oscuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado con imagen de fondo (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1524178232363-1fb28f74b671?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+/* Personalización de la barra de navegación */
+.navbar {
+    background-color: var(--verde-principal) !important;
+    border-bottom: 3px solid var(--verde-acento);
+}
+
+/* Estilo para las fotos de eventos */
+.img-fluid {
+    transition: transform 0.3s ease;
+    border: 3px solid white;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de Educaplay */
+#educaplay {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Botón de carga para docentes */
+.btn-success {
+    background-color: var(--verde-principal);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+.btn-success:hover {
+    background-color: var(--verde-acento);
+}
